@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "android.wan.com.wanandroid"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version-alpha05"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta1'
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation 'androidx.test:runner:1.2.0-beta01'
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_viersion-beta01"
+    implementation "com.android.support:design:$support_version"
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: "$retrofit_version"
+    implementation group: 'com.squareup.retrofit2', name: 'adapter-rxjava2', version: "$retrofit_version"
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: "$retrofit_version"
+    implementation group: 'io.reactivex.rxjava2', name: 'rxandroid', version: "$rxandroid_version"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    implementation "com.youth.banner:banner:$baner_version"
+    implementation "com.google.android:flexbox:$flexbox_version"
+    implementation "org.litepal.android:kotlin:$litepal_version"
+    implementation "com.github.jokermonn:permissions4m:2.1.2-lib"
+    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.2-processor'
+
+//    implementation "cn.jzvd:jiaozivideoplayer:$jiaozivideoplayer_version"
+
+}

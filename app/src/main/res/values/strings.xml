@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">玩Android</string>
+    <string name="string_home">首页</string>
+    <string name="string_know">知识体系</string>
+    <string name="string_collect">收藏</string>
+    <string name="string_read_later">稍后阅读</string>
+    <string name="string_open_sours">开源项目</string>
+    <string name="string_about_me">关于我</string>
+    <string name="string_setting">设置</string>
+    <string name="string_login_no">未登录</string>
+    <string name="string_login_hot">Hot</string>
+    <string name="string_login_search">Search</string>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="string_read_later_text">不同于收藏，此功能无需登录，为本地操作，更换手机或重置App后已添加的数据将丢失</string>
+    <string name="string_show_text">显示指定文章</string>
+    <string name="gone_about_me">隐藏关于我</string>
+    <string name="gone_open_project">隐藏开源项目</string>
+    <string name="string_list_animtor">列表动画</string>
+    <string name="string_clear_cache">清除缓存</string>
+    <string name="string_updata">版本更新</string>
+    <string name="string_un_login">退出登录</string>
+    <string name="string_tecent">公众号</string>
+    <string name="string_github">Github</string>
+    <string name="sear_context">请输入搜索内容</string>
+    <string name="search_is_hot">热门搜索</string>
+    <string name="search_is_history">历史搜索</string>
+    <string name="string_to_searc">搜索</string>
+    <string name="clear_record">清除</string>
+    <string name="string_login">登录</string>
+    <string name="string_register">注册</string>
+    <string name="string_account">账号</string>
+    <string name="string_password">密码</string>
+</resources>

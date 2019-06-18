@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--设置页面-->
+    <SwitchPreference
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/string_read_later_text"
+        android:textSize="@dimen/sp_6"
+        android:title="@string/string_read_later" />
+    <SwitchPreference
+        android:backgroundTint="@color/colorPrimary"
+        android:title="@string/string_know" />
+    <SwitchPreference
+        android:backgroundTint="@color/colorPrimary"
+        android:title="@string/gone_about_me" />
+    <SwitchPreference
+        android:backgroundTint="@color/colorPrimary"
+        android:title="@string/gone_open_project" />
+    <Preference
+        android:icon="@mipmap/ic_launcher"
+        android:iconSpaceReserved="true"
+        android:title="@string/string_list_animtor" />
+    <Preference android:title="@string/string_clear_cache" />
+    <Preference android:title="@string/string_updata" />
+    <Preference android:title="@string/string_about_me" />
+    <Preference android:title="@string/string_un_login" />
+
+
+</PreferenceScreen>

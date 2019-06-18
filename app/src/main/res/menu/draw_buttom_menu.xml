@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_collete"
+        android:title="@string/string_collect" />
+    <item
+        android:icon="@drawable/ic_leater_read"
+        android:title="@string/string_read_later" />
+    <item
+        android:icon="@drawable/ic_it_news_project"
+        android:title="@string/string_open_sours" />
+    <item
+        android:icon="@drawable/ic_about_me"
+        android:title="@string/string_about_me" />
+    <item
+        android:id="@+id/item_setting"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/string_setting" />
+</menu>
