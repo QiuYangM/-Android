@@ -128,6 +128,8 @@
     <dimen name="dp_320">320dp</dimen>
     <dimen name="dp_340">340dp</dimen>
     <dimen name="dp_400">400dp</dimen>
+    <dimen name="dp_600">600dp</dimen>
+    <dimen name="dp_700">700dp</dimen>
 
 
     <!--尺寸 sp 从小到大-->

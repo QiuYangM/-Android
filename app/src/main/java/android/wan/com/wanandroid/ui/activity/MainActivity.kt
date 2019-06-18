@@ -6,6 +6,7 @@ import android.view.MenuItem
 import android.wan.com.wanandroid.R
 import android.wan.com.wanandroid.adpter.MainViewPagerAdpter
 import android.wan.com.wanandroid.base.BaseActivity
+import android.wan.com.wanandroid.ui.fragment.LoginFragment
 import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -60,12 +61,18 @@ class MainActivity : BaseActivity() {
             val view = getHeaderView(0)
             val textView = view.findViewById<TextView>(R.id.is_login_show)
             textView.setOnClickListener {
-                startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                //                startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                toLogin()
             }
         }
         buttomNavigation.run {
             setOnNavigationItemSelectedListener(onButtimNavigationListener)
         }
+    }
+
+    private fun toLogin() {
+        val loginFragment = LoginFragment()
+        loginFragment.show(supportFragmentManager, localClassName)
     }
 
     /**

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_700"
+        android:background="@drawable/login_onracle_bg"
+        android:padding="@dimen/dp_10">
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageView
+                android:id="@+id/to_drag"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_drag" />
+
+            <LinearLayout
+                android:id="@+id/show_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to_drag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_25"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/show_logo"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_60"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/InputLayotStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/getAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/string_account" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/InputLayotStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary"
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/getPassWord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/string_password"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/to_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp_20"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/string_login"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

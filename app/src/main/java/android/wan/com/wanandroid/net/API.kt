@@ -40,4 +40,9 @@ object API {
      * 收藏文章
      */
     val URL_TO_COLLECKT = "lg/collect/add/json"
+
+    /**
+     * 公众号列表
+     */
+    val URL_GET_TENCENT = "wxarticle/chapters/json"
 }
